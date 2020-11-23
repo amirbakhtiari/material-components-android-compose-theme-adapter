@@ -17,18 +17,18 @@
 package com.google.android.material.composethemeadapter
 
 object Versions {
-    const val ktlint = "0.38.1"
+    const val ktlint = "0.39.0"
 }
 
 object Libs {
-    const val androidGradlePlugin = "com.android.tools.build:gradle:4.2.0-alpha15"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:4.2.0-alpha16"
 
     const val gradleMavenPublishPlugin = "com.vanniktech:gradle-maven-publish-plugin:0.12.0"
 
     const val mdc = "com.google.android.material:material:1.1.0"
 
     object Kotlin {
-        const val version = "1.4.10"
+        const val version = "1.4.20"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
 
@@ -41,13 +41,13 @@ object Libs {
 
     object AndroidX {
         object Compose {
-            const val snapshot = ""
+            const val snapshot = "6989480"
 
             @JvmStatic
             val snapshotUrl: String
-                get() = "https://androidx.dev/snapshots/builds/$snapshot/artifacts/ui/repository/"
+                get() = "https://androidx.dev/snapshots/builds/$snapshot/artifacts/repository/"
 
-            private const val version = "1.0.0-alpha07"
+            private const val version = "1.0.0-SNAPSHOT"
 
             const val runtime = "androidx.compose.runtime:runtime:$version"
             const val foundation = "androidx.compose.foundation:foundation:${version}"
@@ -56,7 +56,7 @@ object Libs {
             const val ui = "androidx.compose.ui:ui:${version}"
             const val material = "androidx.compose.material:material:${version}"
 
-            const val tooling = "androidx.ui:ui-tooling:${version}"
+            const val tooling = "androidx.compose.ui:ui-tooling:${version}"
             const val test = "androidx.compose.ui:ui-test-junit4:${version}"
         }
 
